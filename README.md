@@ -15,6 +15,7 @@ Other Style Guides
 
 ## Table of Contents
 
+  1. [Linting](#linting)
   1. [Types](#types)
   1. [References](#references)
   1. [Objects](#objects)
@@ -51,6 +52,19 @@ Other Style Guides
   1. [Chat With Us About JavaScript](#chat-with-us-about-javascript)
   1. [Contributors](#contributors)
   1. [License](#license)
+
+## Linting
+`.eslintrc.js` can be used to automatically enforce the rules in this style guide. It validates
+against the base airbnb guide, with 4 spaces indentation: i.e., the amida style guide.
+
+Update `sourceType` as necessary -- `"module"` for ES6 modules (our React/Redux apps) and `"script"`
+for anything else.
+
+Use a package like `grunt-eslint` to auto validate code. You can also setup locally if your
+editor provides `eslint` integration.
+
+The conf file can be extended to better suit certain environments. `.eslintrc.react.js` is included
+as a customized React/Redux example.
 
 ## Types
 
